@@ -28,7 +28,7 @@
     "dayjs": "^1.10.5",
     "dotenv": "^8.2.0",
     "echarts": "^5.1.1",
-    "element-plus": "^1.0.2-beta.53",
+    "element-plus": "^1.0.2-beta.55",
     "font-awesome": "^4.7.0",
     "lodash-es": "^4.17.21",
     "mitt": "^2.1.0",
@@ -46,10 +46,10 @@
     "vue-router": "^4.0.9",
     "vue-types": "^3.0.2",
     "vuedraggable": "^4.0.3",
-    "vxe-table": "^4.0.21",
+    "vxe-table": "^4.0.23",
     "wangeditor": "^4.0.3",
     "xe-ajax": "^4.0.5",
-    "xe-utils": "^3.2.1",
+    "xe-utils": "^3.3.0",
     "xgplayer": "^2.22.1"
   },
   "devDependencies": {
