@@ -1,39 +1,42 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "esnext",
     "module": "esnext",
-    "strict": true,
+    "strict": false,
     "jsx": "preserve",
     "importHelpers": true,
     "moduleResolution": "node",
+    "experimentalDecorators": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
+    "isolatedModules": true,
     "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
     "sourceMap": true,
     "baseUrl": ".",
-    "types": [
-      "webpack-env"
-    ],
+    "allowJs": true,
+    "resolveJsonModule": true, // 包含导入的模块。json的扩展
+    "lib": ["dom", "esnext"],
+    "incremental": true,
     "paths": {
-      "@/*": [
-        "src/*"
-      ]
+      "/@/*": ["src/*"],
+      "/#/*": ["types/*"]
     },
-    "lib": [
-      "esnext",
-      "dom",
-      "dom.iterable",
-      "scripthost"
-    ]
+    "types": ["node", "vite/client"],
+    "typeRoots": ["./node_modules/@types/", "./types"]
   },
   "include": [
     "src/**/*.ts",
     "src/**/*.tsx",
     "src/**/*.vue",
     "tests/**/*.ts",
-    "tests/**/*.tsx"
+    "src/utils/path.js",
+    "types/**/*.d.ts",
+    "types/**/*.ts",
+    "types/global.d.ts",
+    "types/shims-tsx.d.ts",
+    "types/shims-vue.d.ts",
+    "mock/asyncRoutes.ts"
   ],
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules", "dist", "**/*.js"]
 }
