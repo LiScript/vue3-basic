@@ -15,6 +15,34 @@ body {
     Microsoft YaHei, Arial, sans-serif;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+  height: 12px;
+  background-color: #fff;
+}
+
+/*定义滚动条轨道 内阴影*/
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+  background-color: #ccc;
+}
+
+/*定义滑块 内阴影*/
+::-webkit-scrollbar-thumb {
+  min-height: 12px;
+  min-width: 8px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+  background-color: #00cae3;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  display: block;
+  min-height: 12px;
+  min-width: 8px;
+  border-radius: 6px;
+  background-color: #40a0b5;
+}
 label {
   font-weight: 700;
 }

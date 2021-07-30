@@ -78,7 +78,7 @@ import zhLocale from "element-plus/lib/locale/lang/zh-cn";
 ElementLocale.use(zhLocale);
 
 export function useElementPlus(app: App) {
-  app.use(ElementPlus);
+  app.use(ElementPlus, { size: "mini", zIndex: 3000 });
   // components.forEach((component: Component) => {
   //   app.component(component.name, component);
   // });
